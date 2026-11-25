@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Adivinhação de Palavras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Adivinha a Palavra 🎯</h1>
+    <p class="sub">Palavra de 5 letras · você tem 6 tentativas</p>
+
+    <div id="grid"></div>
+
+    <div class="input-area">
+      <input type="text" id="palpite" maxlength="5" placeholder="palpite..." autocomplete="off">
+      <button id="btnTentar">Tentar</button>
+    </div>
+
+    <p id="mensagem"></p>
+
+    <button id="btnReiniciar" class="escondido">Jogar de novo 🔄</button>
+
+    <footer>
+      <p>Verde = letra certa no lugar certo · Amarelo = existe mas no lugar errado · Cinza = não tem</p>
+      <p class="assinatura">Web I · IFPB · 2026</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
